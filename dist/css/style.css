@@ -1,0 +1,330 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+main .projects,
+main .about,
+main .contact {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 31px;
+}
+
+ol,
+li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline;
+    color: #000000;
+    cursor: pointer;
+}
+
+.card a:hover,
+.team a:hover,
+.submit input:hover,
+a:hover {
+    text-decoration: underline;
+    background-color: #70707080;
+}
+
+input:hover {
+    background-color: #70707080;
+}
+
+header .nav,
+header .big-logo p {
+    display: none;
+}
+
+input {
+    color: #707070;
+    border: 1px solid #70707080;
+    font-size: 16px;
+    line-height: 38px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    padding-left: 16px;
+    width: 100%;
+}
+
+.name-icon {
+    position: relative;
+}
+
+.name-icon i {
+    position: absolute;
+    font-size: 16px;
+    line-height: 50px;
+    color: #70707080;
+    text-align: left;
+    right: 8px;
+    top: 7px;
+}
+
+img {
+    width: 100%;
+}
+
+.about .team img {
+    filter: grayscale(80%);
+}
+
+.header-bar,
+footer {
+    height: 58px;
+}
+
+
+/* header*/
+
+.header-bar {
+    width: 100%;
+    position: fixed;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+}
+
+.big-logo {
+    margin-bottom: 70px;
+}
+
+.header-bar .logo {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    margin-left: 31px;
+}
+
+.header-bar .logo h3 {
+    font: bold 18px Verdana;
+}
+
+.header-bar .logo p {
+    padding-top: 2px;
+    padding-left: 12px;
+    font-family: Arial;
+}
+
+.header-bar .nav li {
+    font-size: 18px;
+    padding-right: 35px;
+}
+
+.big-logo {
+    background-image: url(architect.jpg);
+    background-size: 100% 100%;
+    color: white;
+    height: 50vw;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.big-logo h1 {
+    width: fit-content;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 35px;
+    padding: 6px 16px 9px 19px;
+}
+
+.big-logo p {
+    padding-left: 16px;
+    font-size: 35px;
+}
+
+
+/* main part */
+
+.projects-name h2,
+.about-name h2,
+.contact-name h2 {
+    font-size: 23px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #70707080;
+}
+
+.card h4 {
+    position: relative;
+    bottom: -39px;
+    color: white;
+    background-color: #000000;
+    width: fit-content;
+    font-weight: 200;
+    line-height: 39px;
+    padding: 0px 11px;
+}
+
+img.house {
+    width: 100%;
+    height: 82%;
+    object-fit: cover;
+}
+
+main .projects {
+    margin-bottom: 75px;
+}
+
+.about>p {
+    line-height: 24px;
+    padding: 32px 0px;
+}
+
+.team p,
+.team h2 {
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.team h4 {
+    color: #707070;
+    padding-bottom: 14px;
+}
+
+.team a {
+    background-color: #0000000D;
+    display: block;
+    line-height: 36px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+main .about {
+    margin-bottom: 60px;
+}
+
+.form {
+    margin-bottom: 30px;
+}
+
+.form>p {
+    padding: 21px 0px;
+}
+
+.submit input {
+    width: fit-content;
+    background-color: black;
+    color: white;
+    padding: 0 11px;
+}
+
+main {
+    margin-bottom: 60px;
+}
+
+
+/* footer part */
+
+footer {
+    background-color: rgb(0, 0, 0);
+}
+
+@media only screen and (min-width: 650px) {
+    header .big-logo p,
+    header .nav {
+        display: block;
+    }
+    .projects-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .projects-cards .card {
+        width: 49%;
+    }
+    .about-teams {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .about-teams .team {
+        width: 48%;
+    }
+    .about-teams,
+    .projects-cards {
+        transform: translate(-8px, 0px);
+    }
+    .card2 {
+        transform: translate(15px, 0);
+    }
+    .card3 {
+        transform: translate(0px, -25px);
+    }
+    .card4 {
+        transform: translate(15px, -25px);
+    }
+    .card5 {
+        transform: translate(0, -50px);
+    }
+    .card6 {
+        transform: translate(15px, -50px);
+    }
+    .card7 {
+        transform: translate(0px, -75px);
+    }
+    .card8 {
+        transform: translate(17px, -75px);
+    }
+    .team2,
+    .team4 {
+        transform: translate(20px, 0px);
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .projects-cards .card {
+        width: 24%;
+    }
+    .about-teams .team {
+        width: 24%;
+    }
+    .projects-cards {
+        transform: translate(-10px, 0px);
+    }
+    .card2 {
+        transform: translate(8px, 0px);
+    }
+    .card3 {
+        transform: translate(16px, 0px);
+    }
+    .card4,
+    .card8 {
+        transform: translate(23px, 0px);
+    }
+    .card5 {
+        transform: translate(0, -20px);
+    }
+    .card6 {
+        transform: translate(8px, -20px);
+    }
+    .card7 {
+        transform: translate(16px, -20px);
+    }
+    .card8 {
+        transform: translate(23px, -20px);
+    }
+    .team2 {
+        transform: translate(5px, 0);
+    }
+    .team3 {
+        transform: translate(10px, 0);
+    }
+    .team4 {
+        transform: translate(15px, 0);
+    }
+}
