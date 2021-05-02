@@ -73,7 +73,9 @@ img {
 }
 
 .about .team img {
-    filter: grayscale(80%);
+    border-radius: 15px;
+    filter: contrast(140%);
+    filter: brightness(140%);
 }
 
 .header-bar,
@@ -122,17 +124,29 @@ footer {
     padding-right: 35px;
 }
 
+#myMode,
+#myDate,
 .big-logo {
-    background-image: url(architect.jpg);
+    background-image: url(JieChen-perfume-Background.jpg);
     background-size: 100% 100%;
     color: white;
-    height: 50vw;
+    height: 1000px;
     padding-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+#myMode,
+#myDate {
+    width: 15rem;
+    height: 10rem;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    ;
 }
 
 .big-logo h1 {
