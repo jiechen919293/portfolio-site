@@ -56,6 +56,7 @@ exports.scripts = scriptsTask;
 exports.images = imagesTask;
 exports.watch = parallel(watchFiles, browserSync);
 exports.dev = series(
-    parallel(htmlTask, scriptsTask, stylesTask, imagesTask); parallel(watchFiles, browserSync)
+    parallel(htmlTask, scriptsTask, stylesTask, imagesTask),
+    parallel(watchFiles, browserSync)
 )
 exports.default = parallel(htmlTask, scriptsTask, stylesTask, imagesTask);

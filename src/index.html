@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/14664ba1fc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
     <title>Portfolio website </title>
+    <script defer src="scripts/app.js"></script>
 </head>
 
 <body>
@@ -24,135 +25,196 @@
                     <li><a href="#contact-l">Contact</a></li>
                 </ul>
             </div>
+            <nav>
+                <div id="cart">
+                    <div class="popover">
+                        <i class="fas fa-shopping-cart"></i>Cart
+                    </div>
+                    <div class="cart-inner hide">
+                        <div id="items-in-cart">You have 0 courses in cart.
+                        </div>
+                        <ul id="cart-ul">
+                        </ul>
+                        <div class="subtotal">
+                            <span>Subtotal:</span>
+                            <span id="subtotal-amount"></span>
+                        </div>
+                        <div class="total">
+                            <span>Total:</span>
+                            <span id="total-amount"></span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
+
         <div class="big-logo">
             <h1>Joy Chen</h1>
             <p>WHAT DO YOU WEAR TODAY?</p>
 
             <input type="text" name="set-Date" id="myDate">
         </div>
-    </header <main>
-    <div class="projects" id="projects-l">
-        <div class="projects-name">
-            <h2>perfumes</h2>
-        </div>
-        <div class="projects-cards">
-            <div class="card card1">
-                <a href="#projects-l">
-                    <h4>Shalimar Guerlain</h4>
-                </a>
-                <img class="house" src="images/house1.jpg" alt="house1">
-            </div>
-            <div class="card card2">
-                <a href="#projects-l">
-                    <h4>Jicky Guerlain</h4>
-                </a>
-                <img class="house" src="images/house2.jpg" alt="house2">
-            </div>
-            <div class="card card3">
-                <a href="#projects-l">
-                    <h4>Jardins Guerlain</h4>
-                </a>
-                <img class="house" src="images/house3.jpg" alt="house3">
-            </div>
-            <div class="card card4">
-                <a href="#projects-l">
-                    <h4>ForMen Bentley</h4>
-                </a>
-                <img class="house" src="images/house4.jpg" alt="house4">
-            </div>
-            <div class="card card5">
-                <a href="#projects-l">
-                    <h4>Santal-Royal Guerlain</h4>
-                </a>
-                <img class="house" src="images/house5.jpg" alt="house5">
-            </div>
-            <div class="card card6">
-                <a href="#projects-l">
-                    <h4>Jadore Dior</h4>npm install --save-dev gulp-eslint eslint-config-airbnb-base eslint-plugin-importnpm install --save-dev gulp-eslint eslint-config-airbnb-base eslint-plugin-import
-                </a>
-                <img class="house" src="images/house6.jpg" alt="house6">
-            </div>
-            <div class="card card7">
-                <a href="#projects-l">
-                    <h4>Viva JuicyC</h4>
-                </a>
-                <img class="house" src="images/house7.jpg" alt="house7">
-            </div>
-            <div class="card card8">
-                <a href="#projects-l">
-                    <h4>Flora GUCCI</h4>
-                </a>
-                <img class="house" src="images/house8.jpg" alt="house8">
-            </div>
-        </div>
 
-    </div>
 
-    <div class="about" id="about-l">
-        <div class="about-name">
-            <h2>About</h2>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt doloribus dolor porro, nobis est repellat vero molestiae aliquam temporibus numquam sed ad quas reprehenderit dolores ducimus assumenda aliquid reiciendis corporis voluptates non
-            omnis? Repellat unde saepe quisquam sed, dignissimos nesciunt nulla ad molestias, beatae nemo tempora perferendis accusamus dicta quibusdam laudantium doloremque amet accusantium corrupti id error neque animi. Ad fuga perferendis consectetur,
-            at sit quo architecto ea in, facere mollitia eos explicabo ab quidem. Aperiam aliquam similique suscipit.</p>
-        <div class="about-teams">
-            <div class="team team1">
-                <img src="images/oil1.jpg" alt="team1">
-                <h2></h2>
-                <h4>Rasheeka Oil</h4>
-                <p>Phasellus eget enim eu lectuur faucibus vestibule. Suspendisse modales pellentesque elementum.</p>
-                <a href="#">Contact</a>
+    </header>
+    <main>
+        <div class="projects" id="projects-l">
+            <div class="projects-name">
+                <h2>perfumes</h2>
             </div>
-            <div class="team team2">
-                <img src="images/oil2.jpg" alt="team2">
-                <h2></h2>
-                <h4>Kashkha Oil</h4>
-                <p>Phasellus eget enim eu lectuur faucibus vestibule. Suspendisse modales pellentesque elementum.</p>
-                <a href="#">Contact</a>
-            </div>
-            <div class="team team3">
-                <img src="images/oil3.jpg" alt="team3">
-                <h2></h2>
-                <h4>El Oud Oil</h4>
-                <p>Phasellus eget enim eu lectuur faucibus vestibule. Suspendisse modales pellentesque elementum.</p>
-                <a href="#">Contact</a>
-            </div>
-            <div class="team team4">
-                <img src="images/oil4.jpg" alt="team4">
-                <h2></h2>
-                <h4>Noora Oil</h4>
-                <p>Phasellus eget enim eu lectuur faucibus vestibule. Suspendisse modales pellentesque elementum.</p>
-                <a href="#">Contact</a>
-            </div>
+            <div class="projects-cards">
+                <div class="card card1">
+                    <a href="#projects-l">
+                        <h4>Shalimar Guerlain</h4>
+                    </a>
+                    <img class="house" src="images/house1.jpg" alt="house1">
 
-        </div>
-    </div>
+                    <div id="cart-price"> $5/ml </div>
 
-    <div class="contact" id="contact-l">
-        <div class="contact-name">
-            <h2>Contact</h2>
-        </div>
-        <div class="form">
-            <P>Let’s get in touch and talk about your next project.</P>
-            <div class="form-box">
-                <div class="name-icon">
-                    <input type="text" name="usersname" placeholder="Name  ">
-                    <i class="fas fa-address-card"></i>
+                    <div id="spaces-remaining"><span>       ONLY  </span> spaces remaining</div>
+                    <button id="add-to-cart">Add To Cart</button>
                 </div>
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="text" name="subject" placeholder="Subject">
-                <input type="text" name="comment" placeholder="Comment">
-            </div>
-            <div class="submit">
-                <input type="submit" value="SEND MESSAGE">
+                <div class="card card2">
+                    <a href="#projects-l">
+                        <h4>Jicky Guerlain</h4>
+                    </a>
+                    <img class="house" src="images/house2.jpg" alt="house2">
+
+                    <div id="cart-price"> $5/ml </div>
+
+                    <div id="spaces-remaining"><span>       ONLY  </span> spaces remaining</div>
+                    <button id="add-to-cart">Add To Cart</button>
+                </div>
+                <div class="card card3">
+                    <a href="#projects-l">
+                        <h4>Jardins Guerlain</h4>
+                    </a>
+                    <img class="house" src="images/house3.jpg" alt="house3">
+
+                    <div id="cart-price"> $5/ml </div>
+
+                    <div id="spaces-remaining"><span>        ONLY </span> spaces remaining</div>
+                    <button id="add-to-cart">Add To Cart</button>
+                </div>
+                <div class="card card4">
+                    <a href="#projects-l">
+                        <h4>ForMen Bentley</h4>
+                    </a>
+                    <img class="house" src="images/house4.jpg" alt="house4">
+
+                    <div id="cart-price"> $5/ml </div>
+                    <div id="spaces-remaining"><span>        ONLY  </span> spaces remaining</div>
+                    <button id="add-to-cart">Add To Cart</button>
+                </div>
+                <div class="card card5">
+                    <a href="#projects-l">
+                        <h4>Santal-Royal Guerlain</h4>
+                    </a>
+                    <img class="house" src="images/house5.jpg" alt="house5">
+
+                    <div id="cart-price"> $5/ml </div>
+
+                    <div id="spaces-remaining"><span>        ONLY  </span> spaces remaining</div>
+                    <button id="add-to-cart">Add To Cart</button>
+                </div>
+                <div class="card card6">
+                    <a href="#projects-l">
+                        <h4>Jadore Dior</h4>
+                    </a>
+                    <img class="house" src="images/house6.jpg" alt="house6">
+
+                    <div id="cart-price"> $5/ml </div>
+
+                    <div id="spaces-remaining"><span>        ONLY  </span> spaces remaining</div>
+                    <button id="add-to-cart">Add To Cart</button>
+                </div>
+                <div class="card card7">
+                    <a href="#projects-l">
+                        <h4>Viva JuicyC</h4>
+                    </a>
+                    <img class="house" src="images/house7.jpg" alt="house7">
+
+                    <div id="cart-price"> $5/ml </div>
+                    <div id="spaces-remaining"><span>        ONLY       </span> spaces remaining</div>
+                    <button id="add-to-cart">Add To Cart</button>
+
+                </div>
+                <div class="card card8">
+                    <a href="#projects-l">
+                        <h4>Flora GUCCI</h4>
+                    </a>
+                    <img class="house" src="images/house8.jpg" alt="house8">
+
+                    <div id="cart-price"> $5/ml </div>
+                    <div id="spaces-remaining"><span>       ONLY       </span> spaces remaining</div>
+                    <button id="add-to-cart">Add To Cart</button>
+                </div>
             </div>
 
         </div>
-        <div class="map">
-            <img src="images/map.jpg" alt="map">
+
+        <div class="about" id="about-l">
+            <div class="about-name">
+                <h2>About</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet,</p>
+            <div class="about-teams">
+                <div class="team team1">
+                    <img src="images/oil1.jpg" alt="team1">
+                    <h2></h2>
+                    <h4>Rasheeka Oil</h4>
+                    <p>Phasellus eget enim eu lectuur faucibus vestibule. Suspendisse modales pellentesque elementum.</p>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="team team2">
+                    <img src="images/oil2.jpg" alt="team2">
+                    <h2></h2>
+                    <h4>Kashkha Oil</h4>
+                    <p>Phasellus eget enim eu lectuur faucibus vestibule. Suspendisse modales pellentesque elementum.</p>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="team team3">
+                    <img src="images/oil3.jpg" alt="team3">
+                    <h2></h2>
+                    <h4>El Oud Oil</h4>
+                    <p>Phasellus eget enim eu lectuur faucibus vestibule. Suspendisse modales pellentesque elementum.</p>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="team team4">
+                    <img src="images/oil4.jpg" alt="team4">
+                    <h2></h2>
+                    <h4>Noora Oil</h4>
+                    <p>Phasellus eget enim eu lectuur faucibus vestibule. Suspendisse modales pellentesque elementum.</p>
+                    <a href="#">Contact</a>
+                </div>
+
+            </div>
         </div>
-    </div>
+
+        <div class="contact" id="contact-l">
+            <div class="contact-name">
+                <h2>Contact</h2>
+            </div>
+            <div class="form">
+                <P>Let’s get in touch and talk about your next project.</P>
+                <div class="form-box">
+                    <div class="name-icon">
+                        <input type="text" name="usersname" placeholder="Name  ">
+                        <i class="fas fa-address-card"></i>
+                    </div>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <input type="text" name="comment" placeholder="Comment">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="SEND MESSAGE">
+                </div>
+
+            </div>
+            <div class="map">
+                <img src="images/map.jpg" alt="map">
+            </div>
+        </div>
 
     </main>
 
