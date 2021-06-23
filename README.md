@@ -1,2 +1,2 @@
 # portfolio-site
-this is the first try to make personal website
+Jie-Chen's personal website
